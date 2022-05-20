@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="397.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PizzaOrder.PizzaOrderController">
+   <children>
+      <ImageView fx:id="image" fitHeight="174.0" fitWidth="252.0" layoutX="373.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pizza.jpeg" />
+         </image></ImageView>
+      <Label layoutX="33.0" layoutY="14.0" prefHeight="45.0" prefWidth="267.0" text="Please select your order">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="77.0" prefHeight="319.0" prefWidth="116.0">
+         <children>
+            <CheckBox fx:id="chkp" mnemonicParsing="false" onAction="#onpc" text="Pizza" />
+            <RadioButton fx:id="radsp" mnemonicParsing="false" onAction="#onspc" prefHeight="102.0" prefWidth="91.0" text="Small(13.0)">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Pizza" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radmp" mnemonicParsing="false" onAction="#onmpc" prefHeight="100.0" prefWidth="112.0" text="Medium(15.5)" toggleGroup="$Pizza" />
+            <RadioButton fx:id="radlp" mnemonicParsing="false" onAction="#onlpc" prefHeight="102.0" prefWidth="91.0" text="Large(17.0)" toggleGroup="$Pizza" />
+         </children></VBox>
+      <TextArea fx:id="txtAreaResults" layoutX="373.0" layoutY="211.0" prefHeight="150.0" prefWidth="252.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnorder" layoutX="475.0" layoutY="370.0" mnemonicParsing="false" onAction="#onbtnclick" text="Order" />
+      <VBox layoutX="137.0" layoutY="77.0" prefHeight="319.0" prefWidth="97.0">
+         <children>
+            <CheckBox fx:id="chkd" mnemonicParsing="false" onAction="#ondc" text="Drink" />
+            <RadioButton fx:id="radsd" mnemonicParsing="false" onAction="#onsdc" prefHeight="102.0" prefWidth="91.0" text="Small(1.5)">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Drink" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radmd" mnemonicParsing="false" onAction="#onmdc" prefHeight="101.0" prefWidth="107.0" text="Medium(2.0)" toggleGroup="$Drink" />
+            <RadioButton fx:id="radld" mnemonicParsing="false" onAction="#onldc" prefHeight="102.0" prefWidth="91.0" text="Large(2.5)" toggleGroup="$Drink" />
+         </children>
+      </VBox>
+      <VBox layoutX="252.0" layoutY="77.0" prefHeight="319.0" prefWidth="112.0">
+         <children>
+            <CheckBox fx:id="chkf" mnemonicParsing="false" onAction="#onfc" text="Fries" />
+            <RadioButton fx:id="radsf" mnemonicParsing="false" onAction="#onsfc" prefHeight="102.0" prefWidth="91.0" text="Small(1.0)">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Fries" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radmf" mnemonicParsing="false" onAction="#onmfc" prefHeight="101.0" prefWidth="107.0" text="Medium(1.5)" toggleGroup="$Fries" />
+            <RadioButton fx:id="radlf" mnemonicParsing="false" onAction="#onlfc" prefHeight="102.0" prefWidth="91.0" text="Large(2.0)" toggleGroup="$Fries" />
+         </children>
+      </VBox>
+      <Label fx:id="lblcost" layoutX="411.0" layoutY="374.0" prefHeight="18.0" prefWidth="49.0" />
+   </children>
+</AnchorPane>

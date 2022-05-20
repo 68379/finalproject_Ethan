@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="collegeplan.CollegePlanController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="410.0">
+         <children>
+            <Label prefHeight="52.0" prefWidth="410.0" text="Select a program you are enrolled in" />
+            <CheckBox fx:id="chkIB" mnemonicParsing="false" onAction="#onIBCheck" prefHeight="32.0" prefWidth="116.0" text="IB" />
+            <CheckBox fx:id="chkAP" mnemonicParsing="false" onAction="#onAPCheck" prefHeight="32.0" prefWidth="116.0" text="AP" />
+            <Separator prefHeight="33.0" prefWidth="410.0" />
+            <Label prefHeight="52.0" prefWidth="410.0" text="Where are you going for college" />
+            <RadioButton fx:id="radNA" mnemonicParsing="false" onAction="#onNAClick" prefHeight="32.0" prefWidth="116.0" text="North America">
+               <toggleGroup>
+                  <ToggleGroup fx:id="collegeGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radEU" mnemonicParsing="false" onAction="#onEUClick" prefHeight="32.0" prefWidth="116.0" text="Europe" toggleGroup="$collegeGroup" />
+            <RadioButton fx:id="radAS" mnemonicParsing="false" onAction="#onASClick" prefHeight="32.0" prefWidth="116.0" text="Asia" toggleGroup="$collegeGroup" />
+            <Separator prefHeight="23.0" prefWidth="410.0" />
+            <TextArea fx:id="txtAreaResult" prefHeight="280.0" prefWidth="398.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
