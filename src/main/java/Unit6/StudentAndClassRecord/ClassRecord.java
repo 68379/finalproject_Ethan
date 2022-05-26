@@ -104,7 +104,7 @@ public class ClassRecord {
         for(int i = 0; i<classRecord.length; i++){
             if(classRecord[i].getGrade() >= 50){
                 r[i] = "P";
-            } else r[i] = "finale";
+            } else r[i] = "final1";
         }
         return r;
     }

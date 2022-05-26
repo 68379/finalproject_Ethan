@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final1.CulminatingController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="400.0" layoutX="-9.0" layoutY="-488.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@red.jpeg" />
+         </image>
+         <effect>
+            <ColorAdjust contrast="0.36" />
+         </effect>
+      </ImageView>
+      <Button mnemonicParsing="false" onAction="#gobackclick" prefHeight="46.0" prefWidth="77.0" text="Go back" />
+      <Button layoutX="323.0" mnemonicParsing="false" onAction="#revc" prefHeight="46.0" prefWidth="77.0" text="reveal" />
+      <Label layoutX="117.0" layoutY="4.0" prefHeight="39.0" prefWidth="166.0" text="Available items">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutY="52.0" prefHeight="447.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="p1" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p11" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p12" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p13" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p14" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p15" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p16" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p17" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p18" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p19" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p110" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p111" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p112" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p113" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p114" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p115" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p116" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p117" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p118" prefHeight="37.0" prefWidth="400.0" />
+            <Label fx:id="p119" prefHeight="37.0" prefWidth="400.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,4 +1,4 @@
-package finale;
+package final1;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,8 +15,8 @@ public class CulminatingApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(finale.CulminatingApplication.class.getResource("Culminating-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(),418,500);
+        FXMLLoader fxmlLoader = new FXMLLoader(final1.CulminatingApplication.class.getResource("Culminating-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(),420,557);
         stage.setTitle("Online Shop");
         stage.setScene(scene);
         stage.show();

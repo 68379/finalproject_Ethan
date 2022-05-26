@@ -37,6 +37,6 @@ module com.example.texteditor {
     opens PhotoAlbum to javafx.fxml;
     exports PhotoAlbum;
 
-    opens finale to javafx.fxml;
-    exports finale;
+    opens final1 to javafx.fxml;
+    exports final1;
 }
